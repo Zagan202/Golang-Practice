@@ -26,7 +26,7 @@ var (
 
 //Globally declaring two ints "a" & "b"
 
-func main() {
+func datatype() {
 	var x int = 1
 	var y int
 	//integer data types

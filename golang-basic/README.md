@@ -4,8 +4,8 @@ This section will cover the simple fundamentals of Golang
 ## The fundamentals demostrated are the following
 
 1. Data Types
-2. Integer, float, strinfg
-3. Booleans
+2. Integer, float, strings
+4. Booleans
 4. Variables
 5. Constants
 6. Operators

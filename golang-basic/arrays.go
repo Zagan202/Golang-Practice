@@ -2,8 +2,11 @@ package main
 
 import "fmt"
 
-func arrayStuff(s string) {
-	switch s {
+func arrayStuff() {
+	var input string
+	fmt.Scanln(&input)
+
+	switch input {
 	case "basic":
 		var intArray [1]int
 		intArray[0] = 10
@@ -47,6 +50,6 @@ func arrayStuff(s string) {
 		Transport := [...]string{"Train", "Bus", "Plane", "Car", "Bike"}
 		fmt.Println("Values of Array Transport: ", Transport)
 	default:
-		panic(fmt.Sprintf("uh oh", s))
+		panic(fmt.Sprintf("uh oh", input))
 	}
 }

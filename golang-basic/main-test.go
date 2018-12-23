@@ -15,5 +15,6 @@ func main() {
 	/*whatType(1, "red", true, 10.5,
 	[]string{"foo", "bar", "baz"},
 	map[string]int{"apple": 23, "tomato": 13})*/
-	arrayStuff("explore type")
+	//arrayStuff()
+	sliceStuff()
 }

@@ -17,5 +17,6 @@ func main() {
 	map[string]int{"apple": 23, "tomato": 13})*/
 	//arrayStuff()
 	//sliceStuff()
-	mapExamples()
+	//mapExamples()
+	conExample()
 }

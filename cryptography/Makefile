@@ -13,7 +13,7 @@ build:
 		$(GOBUILD) -o $(BINARY_NAME) -v
 clean: 
 		$(GOCLEAN)
-		rm -f $(BINARY_NAME) *.enc
+		rm -f $(BINARY_NAME) *.enc *.key
 run:
 		$(GOBUILD) -o $(BINARY_NAME) -v ./...
 		./$(BINARY_NAME)

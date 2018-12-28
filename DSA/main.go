@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -30,14 +31,75 @@ func main() {
 		fmt.Println(interpolationSearch(items3, 0))
 	*/
 	//Demoing sorting Algorithms
-	fmt.Println("BubbleSort")
-	slice := generateRandSlice(100)
-	fmt.Println("\n--- Unsorted --- \n\n", slice)
-	bubbleSort(slice)
-	fmt.Println("\n--- Sorted ---\n\n", slice)
-	fmt.Println("\nQuickSort")
-	slice2 := generateRandSlice(100)
-	fmt.Println("\n--- Unsorted --- \n\n", slice2)
-	quicksort(slice)
-	fmt.Println("\n--- Sorted ---\n\n", slice2)
+	/*
+		fmt.Println("Bubble Sort")
+		slice := generateRandSlice(50)
+		fmt.Println("\n--- Unsorted --- \n\n", slice)
+		bubbleSort(slice)
+		fmt.Println("\n--- Sorted ---\n\n", slice)
+		fmt.Println("\nQuick Sort")
+		slice2 := generateRandSlice(50)
+		fmt.Println("\n--- Unsorted --- \n\n", slice2)
+		quicksort(slice)
+		fmt.Println("\n--- Sorted ---\n\n", slice2)
+		fmt.Println("\nSelection Sort")
+		slice3 := generateRandSlice(50)
+		fmt.Println("\n--- Unsorted --- \n\n", slice3)
+		selectionSort(slice3)
+		fmt.Println("\n--- Sorted ---\n\n", slice3)
+		fmt.Println("\nMerge Sort")
+		slice4 := generateRandSlice(10)
+		fmt.Println("\n--- Unsorted --- \n\n", slice4)
+		fmt.Println("\n--- Sorted ---\n\n", mergeSort(slice4))
+	*/
+	//Demoing Binary tree
+	tree := &BinaryTree{}
+	tree.insert(100).
+		insert(-20).
+		insert(-50).
+		insert(-15).
+		insert(-60).
+		insert(50).
+		insert(60).
+		insert(55).
+		insert(85).
+		insert(15).
+		insert(5).
+		insert(-10)
+	print(os.Stdout, tree.root, 0, 'M')
+
+	//Demoing Stacks and Queues
+	s := NewStack()
+	s.Push(&Node{3})
+	s.Push(&Node{5})
+	s.Push(&Node{7})
+	s.Push(&Node{9})
+	fmt.Println(s.Pop(), s.Pop(), s.Pop(), s.Pop())
+
+	q := NewQueue(1)
+	q.Push(&Node{2})
+	q.Push(&Node{4})
+	q.Push(&Node{6})
+	q.Push(&Node{8})
+	fmt.Println(q.Pop(), q.Pop(), q.Pop(), q.Pop())
+
+	//Demoing Linked List
+
+	link := List{}
+	link.Insert(5)
+	link.Insert(9)
+	link.Insert(13)
+	link.Insert(22)
+	link.Insert(28)
+	link.Insert(36)
+
+	fmt.Println("\n==============================")
+	fmt.Printf("Head: %v\n", link.head.key)
+	fmt.Printf("Tail: %v\n", link.tail.key)
+	link.Display()
+	fmt.Println("\n==============================")
+	fmt.Printf("head: %v\n", link.head.key)
+	fmt.Printf("tail: %v\n", link.tail.key)
+	link.Reverse()
+	fmt.Println("\n==============================")
 }

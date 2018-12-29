@@ -11,6 +11,7 @@ func mapExamples() {
 		"\nThe built-in len() function returns the number of elements in a map.")
 	fmt.Println("Type: delete \nThe built-in delete function deletes an element from a given map associated with the provided key.")
 	fmt.Println("Type: add and edit\n2 elements added and 1 edited in employee map after initialization.")
+	fmt.Println("Type: contains\nAn if statment that verifies if a Map contains a key and returns a value.")
 	fmt.Println("Type: iterate\nThe for…range loop statement can be used to fetch the index and element of a map.")
 	var input string
 	fmt.Scanln(&input)
@@ -59,6 +60,16 @@ func mapExamples() {
 		fmt.Println("editing key Mark")
 		employee["Mark"] = 50 // Edit element
 		fmt.Println(employee)
+	case "contains":
+		var employee = map[string]int{"Lawrence": 10, "Alex": 20}
+		if val, ok := employee["Lawrence"]; ok {
+			fmt.Println("employee[Lawrence] = ", val)
+		}
+		if val, ok := employee["Spiderman"]; ok {
+			fmt.Println("employee[Spiderman] = ", val)
+		} else {
+			fmt.Println("GET ME SPIDERMAN!")
+		}
 	case "iterate":
 		var employee = map[string]int{"Mark": 10, "Sandy": 20,
 			"Rocky": 30, "Rajiv": 40, "Kate": 50}

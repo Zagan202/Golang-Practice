@@ -23,7 +23,7 @@ func sliceStuff() {
 
 		fmt.Printf("intSlice1 \tLen: %v \tCap: %v\n", len(intSlice1), cap(intSlice1))
 		fmt.Printf("intSlice1 \tLen: %v \tCap: %v\n", len(intSlice2), cap(intSlice2))
-	case "new dec":
+	case "newdec":
 		var intSlice1 = new([50]int)[0:10]
 		fmt.Printf("intSlice1 \tLen: %v \tCap: %v\n", len(intSlice1), cap(intSlice1))
 	case "literal":

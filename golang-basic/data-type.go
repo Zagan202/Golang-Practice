@@ -27,7 +27,7 @@ var (
 //Globally declaring two ints "a" & "b"
 
 func datatype() {
-	var x int = 1
+	var x = 1 //int is inherited on the right hand side
 	var y int
 	//integer data types
 	fmt.Println(x) //Should print 1

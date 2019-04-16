@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func linearSearch(datalist []int, key int) bool {
 	for _, item := range datalist {
 		if item == key {
@@ -15,11 +17,13 @@ func binarySearch(haystack []int, needle int) bool {
 
 	for low <= high {
 		median := (low + high) / 2
-
+		fmt.Println("median = ", median)
 		if haystack[median] < needle {
 			low = median + 1
+			fmt.Println("low = ", low)
 		} else {
 			high = median - 1
+			fmt.Println("high = ", high)
 		}
 	}
 
